@@ -9,7 +9,7 @@ public class MainApp {
             System.out.println("\n[Testing Validation Engine]: Adding illegal age bounds...");
             Patient badData = new InPatient("P000", "Erroneous Entry", -12, 100, 3, 40);
         } catch (InvalidPatientDataException e) {
-            System.out.println(">> Success: Validation Caught Exception -> " + e.getMessage());
+            System.out.println("Success: Validation Caught Exception ->" + e.getMessage());
         }
 
         Patient p1 = new InPatient("P101", "Sarah Connor", 34, 200.0, 5, 120.0);
@@ -20,7 +20,7 @@ public class MainApp {
         patientRegistry.add(p2);
         patientRegistry.add(p3);
 
-        System.out.println("\n--- Processing Runtime Polymorphic Billing Structures ---");
+        System.out.println("\n Processing Runtime Polymorphic Billing Structure ");
         for (Patient p : patientRegistry) {
             System.out.println(p);
         }
@@ -28,10 +28,10 @@ public class MainApp {
         System.out.println("\nTotal instantiated tracking instances inside memory matrix: "
                 + Patient.getTotalPatientsCount());
 
-        System.out.println("\n--- Initializing Local Storage Stream Core ---");
+        System.out.println("\n Initializing Local Storage Stream Core");
         MedicalRecordManager.savePatientsToFile(patientRegistry);
 
-        System.out.println("\n--- Initializing External Relational Database Sink ---");
+        System.out.println("\n Initializing External Relational Database Sink ");
         DatabaseLogger.logSystemAccess("Executed runtime processing checkpoint synchronization.");
 
         System.out.println("PROGRAM COMPLETED SUCCESSFULLY");
