@@ -84,3 +84,5 @@ patient_records.txt
 
 * Hassen Mohammed (0049)
 * Hamza Tajuddin (0047)
+* Eyuel Zelalem (0038)
+* Kenean Mulugeta (0059)
