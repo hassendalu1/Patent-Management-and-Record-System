@@ -19,4 +19,3 @@ the code; public class InPatient extends Patient {
     public String toString() {
         return super.toString() + " | Type: InPatient | Total Bill: $" + calculateBill();
     }
-}
